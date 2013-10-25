@@ -18,7 +18,7 @@ public class Config {
     public final static String USERNAME = "appeltaart";
 
     /** The ID of the light we want to control */
-    public final static int LIGHT_ID = 3;
+    public final static int LIGHT_ID = 2;
 
     /** Whether or not we want to actually send requests (false is useful outside the network) */
     public final static boolean LIVE = true;
