@@ -60,7 +60,10 @@ public class LightControl {
         int brightness = (int) (hsb[2] * 255);
 
         // Update the light colour
-        setHSB(hue, saturation, brightness);
+        for(int light_ID : Config.LIGHT_ID)
+        {
+            setHSB(hue, saturation, brightness, light_ID);
+        }
     }
 
     /**
@@ -75,7 +78,7 @@ public class LightControl {
      */
     // For JSONObject sloppiness
     @SuppressWarnings("unchecked")
-    public static void setHSB(final int hue, final int saturation, final int brightness) {
+    public static void setHSB(final int hue, final int saturation, final int brightness, int light_ID) {
 
         // Prepare the parameters for the request
         JSONObject parameters = new JSONObject();
@@ -95,7 +98,7 @@ public class LightControl {
             try {
                 // Prepare the connection
                 final URL url = new URL("http://" + Config.IP + "/api/" + Config.USERNAME
-                        + "/lights/" + Config.LIGHT_ID + "/state");
+                        + "/lights/" + light_ID + "/state");
                 connection = (HttpURLConnection) url.openConnection();
 
                 connection.setDoOutput(true);
