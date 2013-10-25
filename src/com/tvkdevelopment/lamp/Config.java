@@ -5,10 +5,10 @@ package com.tvkdevelopment.lamp;
  */
 public class Config {
 
-    /** How often the light is updated */
+    /** How often the light is updated in ms */
     public final static int UPDATE_INTERVAL = 100;
 
-    /** How long the light transitions take */
+    /** How long the light transitions take in steps of 100ms*/
     public final static int TRANSITION_DURATION = 10;
 
     /** The IP for the lamps */

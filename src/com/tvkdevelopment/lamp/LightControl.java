@@ -75,7 +75,7 @@ public class LightControl {
      */
     // For JSONObject sloppiness
     @SuppressWarnings("unchecked")
-    public static void setHSB(final float hue, final float saturation, final float brightness) {
+    public static void setHSB(final int hue, final int saturation, final int brightness) {
 
         // Prepare the parameters for the request
         JSONObject parameters = new JSONObject();
@@ -86,7 +86,7 @@ public class LightControl {
         parameters.put("transitiontime", Config.TRANSITION_DURATION);
         final String parameterString = parameters.toJSONString();
 
-        System.out.println(parameters);
+        System.out.println(parameterString);
 
         if (Config.LIVE) {
             HttpURLConnection connection = null;
