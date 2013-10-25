@@ -21,5 +21,5 @@ public class Config {
     public final static int LIGHT_ID = 3;
 
     /** Whether or not we want to actually send requests (false is useful outside the network) */
-    public final static boolean LIVE = false;
+    public final static boolean LIVE = true;
 }
