@@ -15,10 +15,10 @@ public class Config {
     public final static String IP = "10.0.1.2";
 
     /** The username for lamp requests */
-    public final static String USERNAME = "appeltaart";
+    public final static String USERNAME = "anoukvisser";
 
     /** The ID of the light we want to control */
-    public final static int[] LIGHT_ID = {2, 3};
+    public final static int[] LIGHT_ID = {2};
 
     /** Whether or not we want to actually send requests (false is useful outside the network) */
     public final static boolean LIVE = true;

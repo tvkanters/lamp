@@ -82,7 +82,7 @@ public class LightControl {
 
         // Prepare the parameters for the request
         JSONObject parameters = new JSONObject();
-        parameters.put("colormode", "hs");
+        //parameters.put("colormode", "hs");
         parameters.put("hue", hue);
         parameters.put("sat", saturation);
         parameters.put("bri", brightness);
